@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # returns the number of nice strings for part 1
 def part_1(lines: str) -> int:
     # part 1 nice string requirements:

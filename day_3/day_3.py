@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def main():
     santa_curr_loc = (0,0)
     robot_curr_loc = (0,0)
