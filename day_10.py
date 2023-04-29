@@ -2,6 +2,7 @@
 
 import time
 
+
 def look_say_encode(seq : list) -> list:
     prev_char = seq[0]
     result = []
@@ -17,6 +18,11 @@ def look_say_encode(seq : list) -> list:
     result.append(str(count))
     result.append(prev_char)
     return result
+
+
+# TODO implement w/ regex
+def look_say_regex_encode(seq : str) -> str:
+    print("TODO")
 
 
 def main():
