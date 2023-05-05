@@ -51,7 +51,7 @@ def main():
         curr_happiness = 0
         for i in range(list_len):
             left = i - 1 if i - 1 >= 0 else list_len - 1
-            right = i + 1 if i + 1 <= list_len - 1 else 0
+            right = (i + 1) % list_len
 #            print(f"left: {left} | curr: {i} | right: {right}")
             curr_happiness = curr_happiness + rel_map[curr[i]][curr[left]]
             curr_happiness = curr_happiness + rel_map[curr[i]][curr[right]]
