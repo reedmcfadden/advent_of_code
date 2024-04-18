@@ -1,3 +1,5 @@
+#!/bin/python3 
+
 # 100 x 100 grid
 # animated
 
@@ -30,6 +32,12 @@ def main():
         curr_state_list.append(list(l))
         next_state_list.append(list(l))
 
+    # Guarantee lights in each of the four corners are 'on'
+    curr_state_list[0][0] = '#'
+    curr_state_list[0][99] = '#'
+    curr_state_list[99][0] = '#'
+    curr_state_list[99][99] = '#'
+
     # Deterine the grid state after 100 (n) aplications of the stated rules.
     for _ in range(100):
         for x in range(100):
@@ -50,6 +58,12 @@ def main():
                     next_state_list[x][y] = '#'
                 else:
                     next_state_list[x][y] = '.'
+
+        # Guarantee lights in each of the four corners are 'on'
+        next_state_list[0][0] = '#'
+        next_state_list[0][99] = '#'
+        next_state_list[99][0] = '#'
+        next_state_list[99][99] = '#'
         curr_state_list = copy.deepcopy(next_state_list)
 
     total_on = 0
