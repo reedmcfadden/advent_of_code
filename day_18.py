@@ -1,4 +1,4 @@
-#!/bin/python3 
+#!/usr/bin/env python3
 
 # 100 x 100 grid
 # animated
@@ -15,7 +15,7 @@ import copy
 
 def main():
     # Read in input
-    lines = open('day_18.input', 'r').readlines()
+    lines = open('./inputs/day_18.txt', 'r').readlines()
 
     # Create necessary lists
     curr_state_list = []

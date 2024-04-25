@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python3
 
 import json
 
@@ -42,7 +42,7 @@ def loop_dict(curr):
             loop_dict(value)
 
 def main():
-    f = open("./day_12.input")
+    f = open("./inputs/day_12.txt")
 
     json_data = json.load(f)
     for i in json_data:

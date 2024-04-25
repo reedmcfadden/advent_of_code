@@ -26,7 +26,7 @@ def look_say_regex_encode(seq : str) -> str:
 
 
 def main():
-    seq = open("./day_10/day_10.txt").read().strip()
+    seq = open("./inputs/day_10.txt").read().strip()
     lseq = list(seq)
     part_1_num_loops = 40
     part_2_num_loops = 50

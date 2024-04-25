@@ -8,7 +8,7 @@ def main():
     search_range = 100000000
 
     # Retrieve the secret key
-    with open("day_4/day_4.txt") as f:
+    with open("./inputs/day_4.txt") as f:
         secret_key = f.read().strip()
 
     # Brute force loop until the hash that starts with the required prefix is found

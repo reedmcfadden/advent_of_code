@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python3
 
 def main():
     time_limit = 2503
@@ -9,7 +9,7 @@ def main():
     # cycle_duration, 5. curr_distance, 6. points
     reindeer_info = []
 
-    f = open('./day_14.input', 'r')
+    f = open('./inputs/day_14.txt', 'r')
     for line in f.readlines():
         line = line.strip()
         tokens = line.split()

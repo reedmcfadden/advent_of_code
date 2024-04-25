@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python3
 
 # Notes:
 # must find right balance of ingredients
@@ -23,7 +23,7 @@
 
 def main():
     print("Day 15: Science for Hungry People")
-    inLines = open("day_15.input", "r").readlines()
+    inLines = open("./inputs/day_15.txt", "r").readlines()
     tokens = list()
     part_1_best_score = 0
     part_2_best_score = 0

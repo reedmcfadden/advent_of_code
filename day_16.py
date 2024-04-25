@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python3
 
 def main():
     print("Day 16!")
@@ -17,7 +17,7 @@ def main():
         "perfumes": 1
     }
 
-    lines = open("day_16.input", "r").readlines()
+    lines = open("./inputs/day_16.txt", "r").readlines()
 
     # for part 1
     sue_list = list()

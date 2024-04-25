@@ -66,7 +66,7 @@ def part_two(lines: str) -> int:
 
 def main():
     lines = None
-    with open("./day_6/day_6.txt", "r") as f:
+    with open("./inputs/day_6.txt", "r") as f:
         lines = f.readlines()
 
     on_lights = part_one(lines)

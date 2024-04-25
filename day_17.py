@@ -1,11 +1,11 @@
-#!/bin/python
+#!/usr/bin/env python3
 
 import itertools
 
 def main():
     print("Day 17")
 
-    lines = open("day_17.input", "r").readlines()
+    lines = open("./inputs/day_17.txt", "r").readlines()
     containers = list()
     num_combinations = 0
     num_combinations_2 = 0

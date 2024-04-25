@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def main():
-    lines = open("./day_8/day_8.txt").read().splitlines()
+    lines = open("./inputs/day_8.txt").read().splitlines()
     num_code_chars = 0
     num_mem_chars = 0
 

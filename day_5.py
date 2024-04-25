@@ -73,7 +73,7 @@ def part_2(lines: str) -> int:
     return num_nice_strings
 
 def main():
-    with open("day_5/day_5.txt") as f:
+    with open("./inputs/day_5.txt") as f:
         lines = f.readlines()
 
     # clean up the lines

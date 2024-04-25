@@ -2,7 +2,7 @@
 
 def main():
 
-    with open("inputs/day_1_input.txt") as f:
+    with open("./inputs/day_1.txt") as f:
         input = f.read()
 
     up = 0

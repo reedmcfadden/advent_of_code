@@ -6,7 +6,7 @@ def main():
     feet_ribbon_needed = 0
     
     # Read and store all dimensions in 2d list
-    with open("inputs/day_2.txt") as f:
+    with open("./inputs/day_2.txt") as f:
         for line in f:
             box_dimension_list.append(line.strip().split("x"))
 

@@ -12,7 +12,7 @@
 # Part 2
 # Same as part 1, except that the signal provided to b is hardwired to the result of part 1 -- 46065
 def main(part_2=False):
-    lines = open("./day_7/day_7.txt").read().splitlines()
+    lines = open("./inputs/day_7.txt").read().splitlines()
 
     instructions = [] # list of tuples ([tokens...], dest)
     inputs = {}

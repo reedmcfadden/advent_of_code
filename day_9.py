@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def main():
-    lines = open("./day_9/day_9.txt").read().splitlines()
+    lines = open("./inputs/day_9.txt").read().splitlines()
     cityAdjacencyList = {}
     for line in lines:
         tokens = line.split(" ")

@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/env python3
 
 import itertools
 
@@ -8,7 +8,7 @@ def main():
     max_happiness = -9999999
 
     # parse. populate people set and rel_map
-    f = open("./day_13.input", 'r')
+    f = open("./inputs/day_13.txt", 'r')
     for line in f.readlines():
         line = line.strip()[0:-1]   # strip whitespace and trim trailing period
         if not line:

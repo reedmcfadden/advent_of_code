@@ -7,7 +7,7 @@ def main():
     toggle = True
 
     # Read in all directions into 2d list
-    with open("inputs/day_3.txt") as f:
+    with open("./inputs/day_3.txt") as f:
         input = f.read()
         
     # Process each direction and add to set
