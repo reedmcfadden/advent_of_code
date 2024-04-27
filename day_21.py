@@ -1,28 +1,5 @@
 #!/usr/bin/env python3
 
-# Notes
-# - player and enemy (boss fight)
-# - player always goes first
-# - each attach reduces opponent's hp by 1
-# - first character at or below 0 hp loses
-# - damage dealt by an attacker each turn is equal
-#   to the attackers dmg score - defender's armor score
-# - attacker always deals at least 1 dmg
-# - dmg and armor both start at 0
-# - dmg and armor stats are the sum of all item stats
-# - start with no items
-# - player has 100 hp
-# - have infinite gold
-# - only one weapon, no dual-wielding
-# - armor is optional, but can only use 1
-# - can have 0-2 rings
-# - any bought items MUST be used
-# - shop only have one of each item
-
-# Challenge
-# - what is the least amount of gold you can spend and still win.
-# - this is a knapsack problem, so probably need to use greedy
-
 from math import ceil
 
 SHOP_CONTENTS = '''
@@ -52,9 +29,7 @@ SHOP_CONTENTS = '''
 def main():
     lines = open('./inputs/day_21.txt', 'r').readlines()
     BASE_HP = 100
-    # 1 weapon, 0-1 armor, 0-2 rings allowed
-    # contains list of tuples of (hp, cost, dmg, armor)
-    stat_combos = []
+    stat_combos = []    # contains list of tuples of (hp, cost, dmg, armor)
 
     # Get boss stats
     boss_stats = []
@@ -115,8 +90,6 @@ def main():
         if boss_turns_to_die > player_turns_to_die:
             max_gold_spent = max(max_gold_spent, sc[1])
 
-
-    # TODO - finish up and print out answer
     print(f'Part 1 answer: {lowest_gold_spent}')
     print()
     print(f'Part 2 answer: {max_gold_spent}')
